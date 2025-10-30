@@ -3,7 +3,10 @@ import { useState } from "react"
 import './InputUrl.css'
 
 
-const BackEndAPI = 'http://localhost:8000/summarize'
+//const BackEndAPI = 'http://localhost:8000/summarize'
+
+const BACKEND_BASE_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000'; 
+const BackEndAPI = `${BACKEND_BASE_URL}/summarize`;
 
 function InputUrl(){
 
