@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* GLOBAL STYLING */
+body {
+  background: linear-gradient(180deg, #ffffff 0%, #f6f7fb 100%);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #111;
+}
+
+/* MAIN WRAPPER */
+.mainContainer {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  width: 90%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mainContainer:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADING */
+.heroTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0a0a0a;
+}
+
+.heroSubtitle {
+  font-size: 1rem;
+  color: #5f6368;
+  margin-bottom: 40px;
+}
+
+/* INPUT FIELD */
+.displayStyleURL input {
+  width: 80%;
+  max-width: 600px;
+  padding: 16px 20px;
+  font-size: 17px;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  outline: none;
+  background-color: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.displayStyleURL input:focus {
+  border-color: #0070f3;
+  box-shadow: 0 0 8px rgba(0, 112, 243, 0.3);
+  background-color: #fff;
+}
+
+/* BUTTON */
+.submitStyle button {
+  background: linear-gradient(135deg, #0070f3, #0366d6);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: all 0.3s ease;
+}
+
+.submitStyle button:hover {
+  background: linear-gradient(135deg, #0366d6, #004aad);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 112, 243, 0.25);
+}
+
+.submitStyle button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* SUMMARY BOX */
+.FinalDisplay {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 25px 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  text-align: left;
+}
+
+.FinalDisplay p {
+  font-size: 17px;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .displayStyleURL input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .FinalDisplay {
+    width: 100%;
+  }
+
+  .heroTitle {
+    font-size: 1.7rem;
+  }
+
+  /* FOOTER SECTION */
+.footerSection {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e7eb;
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #5f6368;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.disclaimerText {
+  margin-bottom: 8px;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.authorText {
+  color: #111827;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+  .footerSection {
+    width: 100%;
+    font-size: 13px;
+  }
+}
+
+}
