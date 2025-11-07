@@ -75,7 +75,7 @@ return(
           ⚠️ Disclaimer: Not every website can be summarized. This app uses AI to analyze and
           generate content automatically — accuracy may vary. Please keep that in mind.
 
-        Fetching data may be delayed because my backend API server is hosted on a free plan, which can take over a minute to start up. Once it’s running, it will respond normally.
+        @Fetching data may be delayed because my backend API server is hosted on a free plan, which can take over a minute to start up. Once it’s running, it will respond normally.
 
         </p>
         <p className="authorText">Author — <strong>Subhasis Kalia</strong></p>
